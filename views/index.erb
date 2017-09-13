@@ -1,10 +1,17 @@
 <html>
     <head>
+        <style>
+            body {background:<%= color %>;}
+            #number {display: <%= cheat %>;}
+        </style>
     </head>
     <body>
         <h1>
-            "The SECRET NUMBER is " + <%= number %> + "."
+            Guess the number!
         </h1>
+        <p id="number">
+            The number is <%= number %>
+        </p>
         <form>
             <input type='text' name='guess' />
             <input type='submit' value='Guess!' />
